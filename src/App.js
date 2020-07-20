@@ -3,10 +3,12 @@ import "./App.css";
 import Row from "./components/Row";
 import Banner from "./components/Banner";
 import requests from "./api/requests";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Banner />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
